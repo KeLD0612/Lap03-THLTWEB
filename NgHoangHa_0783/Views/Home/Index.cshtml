@@ -3,6 +3,18 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="d-grid gap-3">
+                <a href="@Url.Action("Index", "Product")" class="btn btn-primary btn-lg">
+                    <i class="fas fa-box"></i>
+                    Quản lý Sản phẩm
+                </a>
+                <a href="@Url.Action("Index", "Category")" class="btn btn-success btn-lg">
+                    <i class="fas fa-list"></i>
+                    Quản lý Danh mục
+                </a>
+            </div>
+        </div>
+    </div>
 </div>

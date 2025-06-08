@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using NgHoangHa_0783.Models;
 using NgHoangHa_0783.Repositories;
 
-namespace NgHoangHa_0783.Controllers
+namespace NgHoangHa_0783.Areas.Admin.Contronllers
 {
+    [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
         private readonly IProductRepository _productRepository;

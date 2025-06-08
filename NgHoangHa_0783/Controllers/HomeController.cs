@@ -1,6 +1,6 @@
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using NgHoangHa_0783.Models;
-using System.Diagnostics;
 
 namespace NgHoangHa_0783.Controllers
 {
