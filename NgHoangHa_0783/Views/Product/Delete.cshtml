@@ -1,0 +1,10 @@
+﻿@model NgHoangHa_0783.Models.Product
+<h2>Delete Product</h2>
+<div class="d-flex justify-content mb-3">
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Id" />
+        <p>Are you sure you want to delete @Model.Name?</p>
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+    <a asp-action="Index" class="btn btn-secondary me-2">cancel</a>
+</div>
